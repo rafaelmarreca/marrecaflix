@@ -23,3 +23,7 @@ body {
 a {
   color: inherit;
 }
+
+.slick-list {
+  overflow: visible !important;
+}
