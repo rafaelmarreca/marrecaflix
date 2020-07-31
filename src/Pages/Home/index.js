@@ -1,24 +1,19 @@
-import React from "react";
-import Menu from "../Menu";
-import dadosIniciais from "../../data/dados_iniciais.json";
-import BannerMain from "../BannerMain";
-import Carousel from "../Carousel";
-import PageDefault from "../PageDefault";
+import React from 'react';
+import dadosIniciais from '../../data/dados_iniciais.json';
+import BannerMain from '../../components/BannerMain';
+import Carousel from '../../components/Carousel';
+import PageDefault from '../PageDefault';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 function Home() {
   return (
     <PageDefault>
       <Container>
-        <Menu />
-
         <BannerMain
           videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
           url={dadosIniciais.categorias[0].videos[0].url}
-          videoDescription={
-            "Vintage Culture x Beck’s - Unlock Your Soul @ São Paulo, Skyline"
-          }
+          videoDescription="Vintage Culture x Beck’s - Unlock Your Soul @ São Paulo, Skyline"
         />
 
         <Carousel ignoreFirstVideo category={dadosIniciais.categorias[0]} />
